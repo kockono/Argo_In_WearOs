@@ -15,12 +15,12 @@ class VolumeAndFavorite extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SizedBox(
+          const SizedBox(
             height: 24,
             width: 24,
             child: Stack(
               alignment: Alignment.center,
-              children: const [
+              children: [
                 CircularProgressIndicator(
                   value: 0.4,
                   color: Colors.white,
