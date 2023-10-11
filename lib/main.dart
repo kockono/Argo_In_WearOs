@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:watch_app/screens/deployments.dart';
-import 'package:watch_app/screens/music_screen.dart';
 
 void main() {
   runApp(const MyApp());

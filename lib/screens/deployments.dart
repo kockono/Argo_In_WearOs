@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:watch_app/screens/components/buttons_server.dart';
 
 class Deployments extends StatelessWidget {
   @override
@@ -6,71 +7,21 @@ class Deployments extends StatelessWidget {
     super.key,
   });
 
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Deploys'),
+          backgroundColor: Colors.blueGrey[600],
           centerTitle: true,
         ),
         body: Center(
-          child: Container(
+          child: SizedBox(
             width: 450,
             height: 450,
             child: ListView(
-              children: const <Widget>[
-                ListTile(
-                  title: Row(
-                    children: <Widget>[
-                      Center(child: Icon(Icons.refresh, size: 50.0)),
-                      Expanded(
-                        child: Center(
-                          child: Text('Sans: Staging'),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                ListTile(
-                  title: Row(
-                    children: <Widget>[
-                      Center(child: Icon(Icons.upload, size: 50.0)),
-                      Expanded(
-                        child: Center(
-                          child: Text('Elemento 2'),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                ListTile(
-                  title: Row(
-                    children: <Widget>[
-                      Center(
-                          child: Icon(Icons.cloud_upload_rounded, size: 50.0)),
-                      Expanded(
-                        child: Center(
-                          child: Text('Elemento 2'),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                ListTile(
-                  title: Row(
-                    children: <Widget>[
-                      Center(
-                          child: Icon(Icons.replay_circle_filled_rounded,
-                              size: 50.0)),
-                      Expanded(
-                        child: Center(
-                          child: Text('Elemento 2'),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+              children: buttonsDeployments,
             ),
           ),
         ),
