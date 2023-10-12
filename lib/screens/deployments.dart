@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:watch_app/screens/components/buttons_server.dart';
+import 'package:watch_app/assets/constants.dart';
 
 class Deployments extends StatelessWidget {
   @override
@@ -21,7 +22,7 @@ class Deployments extends StatelessWidget {
             width: 450,
             height: 450,
             child: ListView(
-              children: buttonsDeployments,
+              children: addServerButtons(servers),
             ),
           ),
         ),

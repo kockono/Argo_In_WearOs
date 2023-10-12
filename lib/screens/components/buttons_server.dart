@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:watch_app/assets/constants.dart';
 import '../../models/server_model.dart';
 
-var buttonsDeployments = <Widget>[];
+List<Widget> addServerButtons(servers) {
+  var buttonsDeployments = <Widget>[];
 
-Widget addServerButtons() {
   for (Server server in servers) {
     buttonsDeployments.add(
       ListTile(
@@ -31,7 +30,5 @@ Widget addServerButtons() {
     );
   }
 
-  return ListView(
-    children: buttonsDeployments,
-  );
+  return buttonsDeployments;
 }
