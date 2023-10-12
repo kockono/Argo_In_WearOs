@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Server {
   final String name;
   final String ip;
-  Icons icon;
+  final IconData icon;
 
   Server({required this.name, required this.ip, required this.icon});
 
